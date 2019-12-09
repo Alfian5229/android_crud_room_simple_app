@@ -1,0 +1,51 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "209fddf667fb7d32387bac471772d760",
+    "entities": [
+      {
+        "tableName": "tbarang",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`barangId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nama_barang` TEXT, `merk_barang` TEXT, `harga_barang` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "barangId",
+            "columnName": "barangId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "namaBarang",
+            "columnName": "nama_barang",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "merkBarang",
+            "columnName": "merk_barang",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "hargaBarang",
+            "columnName": "harga_barang",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "barangId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"209fddf667fb7d32387bac471772d760\")"
+    ]
+  }
+}
