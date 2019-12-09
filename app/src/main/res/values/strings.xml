@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LearnRoomCRUD</string>
+    <string name="submit">Submit</string>
+    <string name="data">Data</string>
+    <string name="harga_barang">Harga Barang</string>
+    <string name="merk_barang">Merk Barang</string>
+    <string name="nama_barang">Nama Barang</string>
+</resources>
